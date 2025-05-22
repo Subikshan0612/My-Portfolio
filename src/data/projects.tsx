@@ -434,7 +434,7 @@ const projects: Project[] = [
         // </div>
                 <div>
           <TypographyP className="font-mono ">
-            Welcome to my digital showcase of a revolutionary matchmaking platform that's currently in development.
+            Welcome to my digital showcase of a revolutionary matchmaking platform that&apos;s currently in development.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <TypographyH3 className="my-4 mt-8">
@@ -466,7 +466,7 @@ const projects: Project[] = [
             ]}
           />
           <p className="font-mono mb-2 mt-8 text-center">
-            This platform isn't just a matrimonial service — it's a complete matchmaking ecosystem designed to create meaningful connections.
+            This platform isn&apos;t just a matrimonial service — it&apos;s a complete matchmaking ecosystem designed to create meaningful connections.
           </p>
         </div>
       );
