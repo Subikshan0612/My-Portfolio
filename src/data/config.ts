@@ -32,7 +32,7 @@ const config = {
   ],
   author: "Subikshan Ramachandran",
   email: "subikshanramachandran@gmail.com",
-  site: "https://subikshanramachandran.com",
+  site: "//www.subikshanramachandran.com",
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
