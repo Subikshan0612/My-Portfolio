@@ -2,7 +2,13 @@ import AceTernityLogo from "@/components/logos/aceternity";
 import SlideShow from "@/components/slide-show";
 import { Button } from "@/components/ui/button";
 import { TypographyH3, TypographyP } from "@/components/ui/typography";
-import { ArrowDownUpIcon, ArrowUpRight, ExternalLink, Link2, MoveUpRight } from "lucide-react";
+import {
+  ArrowDownUpIcon,
+  ArrowUpRight,
+  ExternalLink,
+  Link2,
+  MoveUpRight,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
@@ -242,55 +248,55 @@ const PROJECT_SKILLS = {
     title: "OpenAI",
     bg: "black",
     fg: "white",
-    icon: <img src="assets/icons/openai-svgrepo-com_white.svg" alt="OpenAI"/>,
+    icon: <img src="assets/icons/openai-svgrepo-com_white.svg" alt="OpenAI" />,
   },
   netlify: {
     title: "Netlify",
     bg: "black",
     fg: "white",
-    icon: <SiNetlify/>,
+    icon: <SiNetlify />,
   },
   html: {
     title: "HTML5",
     bg: "black",
     fg: "white",
-    icon: <SiHtml5/>,
+    icon: <SiHtml5 />,
   },
   css: {
     title: "CSS3",
     bg: "black",
     fg: "white",
-    icon: <SiCss3/>,
+    icon: <SiCss3 />,
   },
   bootstrap: {
     title: "Bootstrap",
     bg: "black",
     fg: "white",
-    icon: <SiBootstrap/>,
+    icon: <SiBootstrap />,
   },
   maven: {
     title: "Maven",
     bg: "black",
     fg: "white",
-    icon: <SiApachemaven/>,
+    icon: <SiApachemaven />,
   },
   java: {
     title: "Java",
     bg: "black",
     fg: "white",
-    icon: <img src="assets/icons/icons8-java.svg" alt="Java"/>,
+    icon: <img src="assets/icons/icons8-java.svg" alt="Java" />,
   },
   cplusplus: {
     title: "C++",
     bg: "black",
     fg: "white",
-    icon: <SiCplusplus/>,
+    icon: <SiCplusplus />,
   },
   arduino: {
     title: "Arduino",
     bg: "black",
     fg: "white",
-    icon: <SiArduino/>,
+    icon: <SiArduino />,
   },
 };
 export type Project = {
@@ -305,25 +311,31 @@ export type Project = {
   live: string;
 };
 const projects: Project[] = [
-  { // 01. Healthcare App (In Progress)
+  {
+    // 01. Healthcare App (In Progress)
     id: "Healthcare App",
     category: "Healthcare App",
     title: "My Healthcare App",
     src: "/assets/projects-screenshots/Subikshanprojects/DoctorSelection.png",
-    screenshots: ["/assets/projects-screenshots/Subikshanprojects/DoctorSelection.png"],
+    screenshots: [
+      "/assets/projects-screenshots/Subikshanprojects/DoctorSelection.png",
+    ],
     live: "https://www.abhijitzende.com/",
-    github:"https://github.com/Subikshan0612/Healthcare-App-main.git",
+    github: "https://github.com/Subikshan0612/Healthcare-App-main.git",
     skills: {
       frontend: [
-        PROJECT_SKILLS.ts,
-        PROJECT_SKILLS.next,
-        PROJECT_SKILLS.shadcn,
-        PROJECT_SKILLS.aceternity,
-        PROJECT_SKILLS.framerMotion,
-        PROJECT_SKILLS.tailwind,
-        PROJECT_SKILLS.spline,
+        PROJECT_SKILLS.react, // React.js
+        PROJECT_SKILLS.js, // JavaScript (or you can use PROJECT_SKILLS.ts for TypeScript)
+        PROJECT_SKILLS.html, // HTML5
+        PROJECT_SKILLS.css, // CSS3
+        PROJECT_SKILLS.bootstrap, // Bootstrap (or you can use PROJECT_SKILLS.tailwind for Tailwind CSS)
       ],
-      backend: [],
+      backend: [
+        PROJECT_SKILLS.node, // Node.js
+        PROJECT_SKILLS.express, // Express.js
+        PROJECT_SKILLS.mongo, // MongoDB
+        PROJECT_SKILLS.js, // JavaScript for backend
+      ],
     },
     get content() {
       return (
@@ -337,7 +349,10 @@ const projects: Project[] = [
             Healthcare Appointment System
           </TypographyH3>
           <p className="font-mono mb-2">
-            Developed a comprehensive healthcare appointment booking platform with a user-friendly interface. The system allows patients to easily schedule appointments with their preferred doctors and receive instant confirmation.
+            Developed a comprehensive healthcare appointment booking platform
+            with a user-friendly interface. The system allows patients to easily
+            schedule appointments with their preferred doctors and receive
+            instant confirmation.
           </p>
           <SlideShow
             images={[
@@ -347,13 +362,20 @@ const projects: Project[] = [
           />
           <TypographyH3 className="my-4 ">Secure Authentication</TypographyH3>
           <p className="font-mono mb-2">
-            Implemented OAuth integration for secure and seamless authentication, allowing users to sign in with their Google, Facebook, or Apple accounts while maintaining data privacy and security.
+            Implemented OAuth integration for secure and seamless
+            authentication, allowing users to sign in with their Google,
+            Facebook, or Apple accounts while maintaining data privacy and
+            security.
           </p>
-          <SlideShow images={[`${BASE_PATH}/Subikshanprojects/SignUp&In.png`]} />
+          <SlideShow
+            images={[`${BASE_PATH}/Subikshanprojects/SignUp&In.png`]}
+          />
           <TypographyH3 className="my-4 mt-8">Key Features</TypographyH3>
 
           <p className="font-mono mb-2">
-            The platform includes appointment scheduling, doctor selection, real-time availability checking, and automated email confirmations to enhance the patient experience.
+            The platform includes appointment scheduling, doctor selection,
+            real-time availability checking, and automated email confirmations
+            to enhance the patient experience.
           </p>
           <SlideShow
             images={[
@@ -362,86 +384,56 @@ const projects: Project[] = [
             ]}
           />
           <p className="font-mono mb-2 mt-8 text-center">
-            This Healthcare App streamlines the patient-doctor connection while ensuring a secure, efficient booking experience.
+            This Healthcare App streamlines the patient-doctor connection while
+            ensuring a secure, efficient booking experience.
           </p>
         </div>
-
       );
     },
   },
-  { // 02. Matrimonial Software
+  {
+    // 02. Matrimonial Software
     id: "Matchmaking Pro",
     category: "Matrimonial Software",
     title: "Matchmaking Pro",
     src: "/assets/projects-screenshots/Subikshanprojects/Mp-Dashboard.png",
-    screenshots: ["/assets/projects-screenshots/Subikshanprojects/MP-Dashboard.png"],
+    screenshots: [
+      "/assets/projects-screenshots/Subikshanprojects/MP-Dashboard.png",
+    ],
     live: "https://www.abhijitzende.com/",
-    github:"https://github.com/Subikshan0612/Matrimonial-Software.git",
+    github: "https://github.com/Subikshan0612/Matrimonial-Software.git",
     skills: {
       frontend: [
-        PROJECT_SKILLS.ts,
-        PROJECT_SKILLS.next,
-        PROJECT_SKILLS.shadcn,
-        PROJECT_SKILLS.aceternity,
-        PROJECT_SKILLS.framerMotion,
-        PROJECT_SKILLS.tailwind,
-        PROJECT_SKILLS.spline,
+        PROJECT_SKILLS.react, // React.js
+        PROJECT_SKILLS.js, // JavaScript (or you can use PROJECT_SKILLS.ts for TypeScript)
+        PROJECT_SKILLS.html, // HTML5
+        PROJECT_SKILLS.css, // CSS3
+        PROJECT_SKILLS.bootstrap, // Bootstrap (or you can use PROJECT_SKILLS.tailwind for Tailwind CSS)
       ],
-      backend: [],
+      backend: [
+        PROJECT_SKILLS.node, // Node.js
+        PROJECT_SKILLS.express, // Express.js
+        PROJECT_SKILLS.mongo, // MongoDB
+        PROJECT_SKILLS.js, // JavaScript for backend
+      ],
     },
     get content() {
       return (
-        // <div>
-        //   <TypographyP className="font-mono ">
-        //     Welcome to my digital playground, where creativity meets code in the
-        //     dopest way possible.
-        //   </TypographyP>
-        //   <ProjectsLinks live={this.live} repo={this.github} />
-        //   <TypographyH3 className="my-4 mt-8">
-        //     Beautiful 3D Objects{" "}
-        //   </TypographyH3>
-        //   <p className="font-mono mb-2">
-        //     Did you see that 3D keyboard modal? Yeah! I made that. That
-        //     interactive keyboard is being rendered in 3D on a webpage 🤯, and
-        //     pressing each keycap reveals a skill in a goofy way. It&apos;s like
-        //     typing, but make it art.
-        //   </p>
-        //   <SlideShow
-        //     images={[
-        //       `${BASE_PATH}/Subikshanprojects/MP-Dashboard.png`,
-        //       `${BASE_PATH}/Subikshanprojects/ProfileView.png`,
-        //     ]}
-        //   />
-        //   <TypographyH3 className="my-4 ">Space Theme</TypographyH3>
-        //   <p className="font-mono mb-2">
-        //     Dark background + floating particles = out-of-this-world cool.
-        //   </p>
-        //   <SlideShow images={[`${BASE_PATH}/Subikshanprojects/CallRecording.png`]} />
-        //   <TypographyH3 className="my-4 mt-8">Projects</TypographyH3>
-
-        //   <p className="font-mono mb-2">
-        //     My top personal and freelance projects — no filler, all killer.
-        //   </p>
-        //   <SlideShow
-        //     images={[
-        //       `${BASE_PATH}/Subikshanprojects/MP-Dashboard.png`,
-        //       `${BASE_PATH}/Subikshanprojects/LiveStatus.png`,
-        //     ]}
-        //   />
-        //   <p className="font-mono mb-2 mt-8 text-center">
-        //     This site&apos;s not just a portfolio — it&apos;s a whole vibe.
-        //   </p>
-        // </div>
-                <div>
+        <div>
           <TypographyP className="font-mono ">
-            Welcome to my digital showcase of a revolutionary matchmaking platform that&apos;s currently in development.
+            Welcome to my digital showcase of a revolutionary matchmaking
+            platform that&apos;s currently in development.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <TypographyH3 className="my-4 mt-8">
             Intelligent Matchmaking Platform
           </TypographyH3>
           <p className="font-mono mb-2">
-            This matrimonial software goes beyond traditional matching by incorporating advanced algorithms and personalized support. Each profile is carefully curated to ensure meaningful connections, with dedicated call support to guide users through their matchmaking journey.
+            This matrimonial software goes beyond traditional matching by
+            incorporating advanced algorithms and personalized support. Each
+            profile is carefully curated to ensure meaningful connections, with
+            dedicated call support to guide users through their matchmaking
+            journey.
           </p>
           <SlideShow
             images={[
@@ -451,13 +443,20 @@ const projects: Project[] = [
           />
           <TypographyH3 className="my-4 ">Personalized Support</TypographyH3>
           <p className="font-mono mb-2">
-            Our dedicated call support team provides personalized assistance to users, helping them navigate profiles and find their perfect match. All interactions are recorded for quality assurance and future reference.
+            Our dedicated call support team provides personalized assistance to
+            users, helping them navigate profiles and find their perfect match.
+            All interactions are recorded for quality assurance and future
+            reference.
           </p>
-          <SlideShow images={[`${BASE_PATH}/Subikshanprojects/CallRecording.png`]} />
+          <SlideShow
+            images={[`${BASE_PATH}/Subikshanprojects/CallRecording.png`]}
+          />
           <TypographyH3 className="my-4 mt-8">Key Features</TypographyH3>
 
           <p className="font-mono mb-2">
-            Comprehensive user profiles, real-time status updates, call recording functionality, and an intuitive dashboard make this platform stand out in the matrimonial software market.
+            Comprehensive user profiles, real-time status updates, call
+            recording functionality, and an intuitive dashboard make this
+            platform stand out in the matrimonial software market.
           </p>
           <SlideShow
             images={[
@@ -466,20 +465,25 @@ const projects: Project[] = [
             ]}
           />
           <p className="font-mono mb-2 mt-8 text-center">
-            This platform isn&apos;t just a matrimonial service — it&apos;s a complete matchmaking ecosystem designed to create meaningful connections.
+            This platform isn&apos;t just a matrimonial service — it&apos;s a
+            complete matchmaking ecosystem designed to create meaningful
+            connections.
           </p>
         </div>
       );
     },
   },
-  { // 03. Portfolio project
+  {
+    // 03. Portfolio project
     id: "portfolio",
     category: "Portfolio",
     title: "My Portfolio",
     src: "/assets/projects-screenshots/Subikshanprojects/LandingPage.png",
-    screenshots: ["/assets/projects-screenshots/Subikshanprojects/LandingPage.png"],
+    screenshots: [
+      "/assets/projects-screenshots/Subikshanprojects/LandingPage.png",
+    ],
     live: "https://www.abhijitzende.com/",
-    github:"https://github.com/Abhiz2411/3D-interactive-portfolio",
+    github: "https://github.com/Subikshan0612/Subikshan-Ramachandran",
     skills: {
       frontend: [
         PROJECT_SKILLS.ts,
