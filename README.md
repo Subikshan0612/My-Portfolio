@@ -2,7 +2,7 @@
 
 Welcome to the repository for my personal portfolio website! 🎉 This project is a culmination of creativity, technology, and my dedication to showcasing my skills, projects, and personality in a visually stunning and interactive manner.
 
-### Live preview: https://www.abhijitzende.com/
+### Live preview: https://subikshan-ramachandran.vercel.app/
 
 https://github.com/Abhiz2411/3D-interactive-portfolio/blob/main/preview_video.mp4
 
@@ -45,7 +45,7 @@ The portfolio website is built using the following tools and technologies:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Abhiz2411/3D-interactive-portfolio.git
+   git clone https://github.com/Subikshan0612/Subikshan-Ramachandran.git
    ```
 
 2. Navigate to the project directory:
@@ -79,7 +79,7 @@ The portfolio website is built using the following tools and technologies:
 
 ## 🚀 Deployment
 
-This project is deployed using **Vercel** for its blazing-fast performance and ease of use. You can view the live site [here](https://www.abhijitzende.com/).
+This project is deployed using **Vercel** for its blazing-fast performance and ease of use. You can view the live site [here](https://subikshan-ramachandran.vercel.app/).
 
 ### Setting up Resend API on Vercel
 
@@ -101,8 +101,8 @@ A huge shoutout to [Naresh Khatri](https://github.com/Naresh-Khatri/Portfolio) f
 
 Feel free to reach out to me for collaboration, feedback, or just to say hi! 😊
 
-- **Email:** abhijitzende75@gmail.com
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/zende-abhijit/)
+- **Email:** subikshanramachandran@gmail.com
+- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/subikshan-ramachandran-2aa302303/)
 
 ---
 
