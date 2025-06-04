@@ -39,7 +39,7 @@ The portfolio website is built using the following tools and technologies:
 
 - **Frontend:** Next.js, React, Tailwind CSS, Shadcn, Aceternity UI
 - **Animations:** GSAP, Framer Motion, Spline Runtime
-- **Other Tools:** Resend, Socket.io, Zod
+- **Other Tools:** Web3Forms, Socket.io, Zod
 
 ## 🌟 Getting Started
 
@@ -63,8 +63,8 @@ The portfolio website is built using the following tools and technologies:
    # Create a .env.local file in the root directory
    touch .env.local
 
-   # Add your Resend API key
-   RESEND_API_KEY=your_resend_api_key_here
+   # Add your Web3Forms access key
+   NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your_web3forms_access_key_here
    ```
 
 5. Start the development server:
@@ -81,17 +81,17 @@ The portfolio website is built using the following tools and technologies:
 
 This project is deployed using **Vercel** for its blazing-fast performance and ease of use. You can view the live site [here](https://subikshan-ramachandran.vercel.app/).
 
-### Setting up Resend API on Vercel
+### Setting up Web3Forms on Vercel
 
-1. Sign up for a [Resend](https://resend.com) account and get your API key
+1. Sign up for a [Web3Forms](https://web3forms.com) account and get your access key
 2. Go to your Vercel project settings
 3. Navigate to the "Environment Variables" section
 4. Add a new environment variable:
-   - Name: `RESEND_API_KEY`
-   - Value: Your Resend API key
+   - Name: `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY`
+   - Value: Your Web3Forms access key
 5. Save the changes and redeploy your application
 
-Note: Make sure to keep your API key secret and never commit it to your repository.
+Note: Web3Forms access keys are safe to use in client-side code, but it's still good practice to keep them organized in environment variables.
 
 ## 💖 Acknowledgments
 
