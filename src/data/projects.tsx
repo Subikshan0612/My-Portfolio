@@ -45,20 +45,22 @@ import { TbBrandFramerMotion } from "react-icons/tb";
 import css from "styled-jsx/css";
 const BASE_PATH = "/assets/projects-screenshots";
 
-const ProjectsLinks = ({ live, repo }: { live: string; repo?: string }) => {
+const ProjectsLinks = ({ live, repo }: { live?: string; repo?: string }) => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-start gap-3 my-3 mb-8">
-      {/* <Link
-        className="font-mono underline flex gap-2"
-        rel="noopener"
-        target="_new"
-        href={live}
-      >
-        <Button variant={"default"} size={"sm"}>
-          Visit Website
-          <ArrowUpRight className="ml-3 w-5 h-5" />
-        </Button>
-      </Link> */}
+      {live && (
+        <Link
+          className="font-mono underline flex gap-2"
+          rel="noopener"
+          target="_new"
+          href={live}
+        >
+          <Button variant={"default"} size={"sm"}>
+            Visit Website
+            <ArrowUpRight className="ml-3 w-5 h-5" />
+          </Button>
+        </Link>
+      )}
       {repo && (
         <Link
           className="font-mono underline flex gap-2"
@@ -308,7 +310,7 @@ export type Project = {
   skills: { frontend: Skill[]; backend: Skill[] };
   content: React.ReactNode | any;
   github?: string;
-  live: string;
+  live?: string;
 };
 const projects: Project[] = [
   {
@@ -320,7 +322,6 @@ const projects: Project[] = [
     screenshots: [
       "/assets/projects-screenshots/Subikshanprojects/DoctorSelection.png",
     ],
-    live: "https://www.abhijitzende.com/",
     github: "https://github.com/Subikshan0612/Healthcare-App-main.git",
     skills: {
       frontend: [
@@ -344,7 +345,7 @@ const projects: Project[] = [
             Welcome to my digital playground, where creativity meets code in the
             dopest way possible.
           </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
+          <ProjectsLinks repo={this.github} />
           <TypographyH3 className="my-4 mt-8">
             Healthcare Appointment System
           </TypographyH3>
@@ -400,7 +401,6 @@ const projects: Project[] = [
     screenshots: [
       "/assets/projects-screenshots/Subikshanprojects/MP-Dashboard.png",
     ],
-    live: "https://www.abhijitzende.com/",
     github: "https://github.com/Subikshan0612/Matrimonial-Software.git",
     skills: {
       frontend: [
@@ -424,7 +424,7 @@ const projects: Project[] = [
             Welcome to my digital showcase of a revolutionary matchmaking
             platform that&apos;s currently in development.
           </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
+          <ProjectsLinks repo={this.github} />
           <TypographyH3 className="my-4 mt-8">
             Intelligent Matchmaking Platform
           </TypographyH3>
@@ -451,7 +451,7 @@ const projects: Project[] = [
           <SlideShow
             images={[`${BASE_PATH}/Subikshanprojects/CallRecording.png`]}
           />
-          <TypographyH3 className="my-4 mt-8">Key Features</TypographyH3>
+                    <TypographyH3 className="my-4 mt-8">Key Features</TypographyH3>
 
           <p className="font-mono mb-2">
             Comprehensive user profiles, real-time status updates, call
@@ -542,5 +542,80 @@ const projects: Project[] = [
       );
     },
   },
+  {
+    // 04. Portfolio project
+    id: "MacOs portfolio",
+    category: "Portfolio",
+    title: "MacOs Theme Portfolio",
+    src: "/assets/projects-screenshots/Subikshanprojects/MacOsLandingPage.png",
+    screenshots: [
+      "/assets/projects-screenshots/Subikshanprojects/MacOsLandingPage.png",
+    ],
+    live: "https://subikshan-mac-os-portfolio.vercel.app/",
+    github: "https://github.com/Subikshan0612/Subikshan-MacOs-Portfolio.git",
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.react, // React.js
+        PROJECT_SKILLS.js, // JavaScript (or you can use PROJECT_SKILLS.ts for TypeScript)
+        PROJECT_SKILLS.html, // HTML5
+        PROJECT_SKILLS.css, // CSS3
+        PROJECT_SKILLS.framerMotion,
+        PROJECT_SKILLS.tailwind,
+      ],
+      backend: [],
+    },
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono ">
+            Experience my portfolio like never before - a fully interactive MacOS 
+            desktop environment that brings familiar Apple aesthetics to the web.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+          <TypographyH3 className="my-4 mt-8">
+            Authentic MacOS Interface
+          </TypographyH3>
+          <p className="font-mono mb-2">
+            Every pixel crafted to mirror the real MacOS experience. From the iconic 
+            dock to the sleek window management system, navigate through my portfolio 
+            just like you would on a Mac. Click, drag, minimize, and maximize windows 
+            with that signature Apple smoothness.
+          </p>
+          <SlideShow
+            images={[
+              `${BASE_PATH}/Subikshanprojects/AboutPage.png`,
+              `${BASE_PATH}/Subikshanprojects/ProjectSection.png`,
+            ]}
+          />
+          <TypographyH3 className="my-4 ">Interactive Desktop Experience</TypographyH3>
+          <p className="font-mono mb-2">
+            Launch applications from the dock, use Spotlight search to find content, 
+            and interact with multiple windows simultaneously. It&apos;s not just a 
+            portfolio - it&apos;s a fully functional desktop OS in your browser.
+          </p>
+          <SlideShow images={[`${BASE_PATH}/Subikshanprojects/ProjectSection.png`]} />
+          <TypographyH3 className="my-4 mt-8">Native MacOS Features</TypographyH3>
+
+          <p className="font-mono mb-2">
+            Complete with menu bar, system preferences, finder windows, and even 
+            the trash can. Every interaction feels natural and intuitive, just 
+            like using a real Mac. The attention to detail will make you forget 
+            you&apos;re browsing a website.
+          </p>
+          <SlideShow
+            images={[
+              `${BASE_PATH}/Subikshanprojects/ProjectSection.png`,
+              `${BASE_PATH}/Subikshanprojects/ProjectOverview.png`,
+            ]}
+          />
+          <p className="font-mono mb-2 mt-8 text-center">
+            Welcome to macOS - Portfolio Edition. Think different, browse different.
+          </p>
+        </div>
+      );
+    },
+  },
+
 ];
 export default projects;
+
